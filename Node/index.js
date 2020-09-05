@@ -4,28 +4,33 @@ var fs = require('fs');
 inquirer.prompt([
     {
       type: "input",
-      name: "name",
+      name: "Name",
       message: "What is your name?"
     },
     {
+        type: "input",
+        name: "Password",
+        message: "What is your password?"
+      },
+    {
       type: "input",
       message: "How many miles do you plan to walk?",
-      name: "stack",
+      name: "MilesWalked",
     },
     {
         type: "input",
         message: "How much are you going to pledge per mile?",
-        name: "stack",
+        name: "PledgeAmt",
     },
     {
         type: "input",
         message: "Which charity(s) would you like to donate to?",
-        name: "stack",
+        name: "Charity",
     },
     {
         type: "list",
         message: "Are you thirsty for change",
-        name: "stack",
+        name: "WantChange",
         choices: [
             "Yes",
             "No",
@@ -37,9 +42,8 @@ inquirer.prompt([
       name: "contact",
       choices: [
         "email",
-        "phone"
-  
-      ]
+        "phone",
+        "social media"]
     }
   ]).then(function(data) {
   
