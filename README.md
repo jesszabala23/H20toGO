@@ -19,18 +19,22 @@ With close to 550,000 Homeless people in the US we want to bring this issue to t
 > 4. After pledge amount has been reached the donation will automatically be placed and you can proceed with a new pledge and or charity.
 
 ### Description
-     Using Node.js initiate a server that accepts command line user and save password input to a text file.
+     Using Node.js initiate an application that accepts user input to create personal accounts and display private user information.
 
-**_Given_** that the user is prompted with a question
+**_Given_** the user is prompted with a form to create an account.
 
-**_When_** the user enters a password
+**_When_** the user chooses a unique username and password the profile will be created.
 
-**_Then_** the password shall store to a text file
+**_Then_** the user will be able to choose from several charity groups.
 
-**_When_** the user selects interest
+**_When_** the user pledges a certain amount of miles.
 
-**_Then_** the selected interest shall store to a text file
+**_Then_** the user can further fill out their profile.
 
-**_When_** the user selects a Zodiac Sign
+**_When_** the user begins to take steps the step counter will track the total distance.
 
-**_Then_** the user's Zodiac sign shall stoe to a text file
+**_Then_** the user can keep track of how much more miles they will need to meet their weekly goal.
+
+**_When_** the user meets their goal, a total tally will appear on their profile.
+
+**_Then_** the user can choose a new charity and set a new goal.
